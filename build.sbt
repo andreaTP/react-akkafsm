@@ -32,7 +32,12 @@ jsDependencies ++= Seq(
     /         "umd/react-dom-server.browser.development.js"
     minified  "umd/react-dom-server.browser.production.min.js"
     dependsOn "umd/react-dom.development.js"
-    commonJSName "ReactDOMServer"
+    commonJSName "ReactDOMServer",
+
+  "org.webjars.bower" % "pdfmake" % "0.1.36"
+    /         "pdfmake.js"
+    minified "pdfmake.min.js"
+    commonJSName "pdfmake"
 )
 
 scalaJSUseMainModuleInitializer := true
